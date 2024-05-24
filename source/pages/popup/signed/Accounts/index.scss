@@ -28,7 +28,7 @@
   font-size: 16px;
   text-align: left;
   line-height: 150%;
-  color: #1b63a6;
+  color: #0f0686;
   width: 100%;
   padding-left: 24px;
 }
@@ -38,17 +38,18 @@
   overflow-y: scroll;
   margin-top: 10px;
   width: calc(100vw - 40px);
-  border: 2px solid rgba(36, 150, 255, 0.5);
+  border: 2px solid #938df5;
   box-sizing: border-box;
-  border-radius: 8px;
+  border-radius: 15px;
 }
 
 .footerCont {
   display: flex;
-  margin-top: 18px;
+  margin-top: 15px;
   background: #00000024;
   backdrop-filter: blur(6px);
-  border-radius: 5px;
+  border-radius: 8px;
+  padding: 4px;
 }
 
 .orSep {
@@ -75,7 +76,7 @@
 .communeButton {
   width: 295px;
   height: 50px;
-  background: linear-gradient(101.54deg, #2496ff 10.81%, #1b63a6 139.52%);
+  background: linear-gradient(101.54deg, #515fe0 10.81%, #2e40df 139.52%);
   border-radius: 8px;
   display: flex;
   justify-content: center;
@@ -87,7 +88,7 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 160%;
-  color: #2496ff;
+  color: #0f0686;
 }
 
 .noAccountsActions {
@@ -100,7 +101,7 @@
 .communeButtonCont {
   width: 295px;
   height: 56px;
-  background: linear-gradient(0deg, #1f75c4 10.81%, #64a3de 139.52%);
+  background: linear-gradient(0deg, #515fe0 10.81%, #2e40df 139.52%);
   border-radius: 8px;
   padding: 3px;
   cursor: pointer;
@@ -114,7 +115,7 @@
   color: #fafbfb;
 }
 .communeButtonCont:active {
-  opacity: 0.7;
+  opacity: 1.2;
   user-select: none;
 }
 
@@ -214,7 +215,7 @@
 
 .addressLink {
   background: rgba(8, 25, 39, 0.7);
-  border-bottom: 2px solid rgba(36, 150, 255, 0.5);
+  border-bottom: 2px solid #938df5;
   box-sizing: border-box;
   position: relative;
   display: block;
