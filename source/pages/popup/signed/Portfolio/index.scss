@@ -1,0 +1,649 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(
+    0deg,
+    rgba(71, 134, 255, 0.4) 0%,
+    rgba(71, 134, 255, 0) 100%
+  );
+  background: url('../../../../assets/images/bg_tokens.png');
+  height: $appHeight;
+  width: $appWidth;
+}
+
+.pageFirstTime {
+  height: $appHeight;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  background: url('../../../../assets/images/bg_wallet_list.png');
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headerIcon {
+  position: static;
+  width: 33px;
+  height: 33px;
+  background: rgba(255, 255, 255, 0.17);
+  border-radius: 21px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #131a2872;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: relative;
+}
+
+.headerContext {
+  z-index: 999;
+  padding: 8px 5px;
+  position: absolute;
+
+  left: 160px;
+  top: 65px;
+  background: linear-gradient(
+      206.09deg,
+      rgba(255, 255, 255, 0.12) 6.74%,
+      rgba(255, 255, 255, 0.06) 39.61%
+    ),
+    #193058;
+  box-shadow: -4px 4px 6px rgba(14, 32, 51, 35%);
+  border-radius: 6px;
+  border: 2px solid;
+  border-image-source: linear-gradient(
+    99.06deg,
+    rgba(255, 255, 255, 0.22) 0%,
+    rgba(255, 255, 255, 0.0528) 100%
+  );
+}
+
+.headerIcon:active {
+  opacity: 0.7;
+}
+
+.headerContextLink {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 15px;
+  /* identical to box height, or 107% */
+
+  color: #fafbfb;
+  margin: 13px 22px;
+  cursor: pointer;
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+.headerIconFirst {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.headerIcons {
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: row;
+}
+.header {
+  width: 375px;
+  max-width: 375px;
+  padding: 24px 24px;
+}
+
+.backTransButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.backTransButton:active {
+  opacity: 0.7;
+}
+
+.transColIcon {
+  margin-right: 8px;
+  margin-top: 2px;
+}
+
+.transCont {
+  backdrop-filter: blur(7px);
+  height: 568px;
+  width: 343px;
+  margin: 16px;
+  border: 1px solid #2496ff;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 12px;
+  overflow: hidden;
+}
+
+.transTitle {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  /* identical to box height, or 24px */
+
+  text-align: center;
+
+  /* Brand / Moonlight Grey / 100% */
+  color: #e6e9ed;
+}
+
+.transItem {
+  border-bottom: 1px solid #ffffff1a;
+  padding: 23px 0;
+  display: flex;
+  width: calc(340px - 32px);
+  overflow: hidden;
+}
+
+.transColStatus {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  margin-right: 21px;
+}
+.transSubColTime {
+  display: flex;
+  flex-direction: row;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 12px;
+  /* identical to box height, or 100% */
+
+  color: #fafbfb;
+
+  opacity: 0.54;
+  display: flex;
+  align-items: center;
+}
+
+.transSubColPrice {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 12px;
+  /* identical to box height, or 100% */
+
+  color: #fafbfb;
+
+  opacity: 0.54;
+}
+
+.transColAction {
+  display: flex;
+  align-self: center;
+}
+
+.transColValue {
+  align-items: flex-end;
+  margin-right: 16px;
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  flex: 1;
+}
+.transSubColDot {
+  width: 2px;
+  height: 2px;
+  margin: 0 3px;
+  border-radius: 6px;
+  background: #989da9;
+}
+
+.transItems {
+  height: 502px;
+  overflow: hidden scroll;
+  width: 317px;
+}
+
+.transAccount {
+  margin-top: 24px;
+  margin-bottom: 8px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.transAddress {
+  font-family: DM Mono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 12px;
+  /* identical to box height, or 100% */
+
+  color: #fafbfb;
+
+  opacity: 0.54;
+}
+
+.transAddressCont {
+  display: flex;
+  align-items: center;
+}
+
+.transAddress {
+  margin-left: 10px;
+}
+
+.transCol1,
+.transCol2 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+
+  color: #ffffff;
+
+  opacity: 0.54;
+}
+
+.transRow {
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+  border-bottom: 1px solid #ffffff1a;
+  align-items: center;
+}
+
+.transError {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 21px;
+
+  color: #ffffff;
+
+  opacity: 0.54;
+  word-break: break-all;
+}
+
+.transErrorCont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app {
+  text-align: center;
+  width: 375px;
+  height: 600px;
+  background-color: #282c34;
+}
+
+.pillet {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  /* width: 144px; */
+  height: 29px;
+  background: #55d171;
+  border-radius: 25px;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 15px;
+  text-align: center;
+  color: #fff;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 250px;
+  white-space: nowrap;
+  padding: 0 15px;
+  min-width: 0;
+}
+
+.cardcont {
+  width: 327px;
+
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  flex-direction: column;
+  background: linear-gradient(0deg, #3c5367, #3c5367),
+    linear-gradient(
+      206.09deg,
+      rgba(255, 255, 255, 0.12) 6.74%,
+      rgba(255, 255, 255, 0.06) 39.61%
+    );
+  backdrop-filter: blur(10px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 12px;
+
+  padding: 2px;
+  margin: 12px 24px;
+}
+
+.cardcontinner {
+  background: linear-gradient(
+      344.1deg,
+      rgba(58, 96, 213, 0.1) 24.49%,
+      rgba(121, 207, 255, 0) 75.65%
+    ),
+    #282d3f;
+  opacity: 0.9;
+  border-radius: 12px 12px 0 0;
+
+  width: 100%;
+  padding: 30px 0 0 0;
+  backdrop-filter: blur(10px);
+}
+
+.stats {
+  font-family: DM Mono, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+  /* identical to box height, or 123% */
+
+  display: flex;
+  align-items: flex-end;
+  text-align: right;
+
+  /* Brand / Forest Green / 100% */
+
+  color: #55d171;
+  margin-bottom: 20px;
+}
+
+.value {
+  font-family: DM Mono, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 42px;
+
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+
+  color: #fafbfb;
+  margin-bottom: 7px;
+}
+.cardinfo {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.networktitle {
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 120.2%;
+  /* or 19px */
+
+  display: flex;
+  align-items: flex-end;
+
+  color: #ffffff;
+  padding: 17px 10px 0 10px;
+}
+
+.cardnetworks {
+  background: linear-gradient(
+      344.1deg,
+      rgba(58, 96, 213, 0.1) 24.49%,
+      rgba(121, 207, 255, 0) 75.65%
+    ),
+    #282d3f;
+  opacity: 0.9;
+  border-radius: 12px;
+  border-radius: 0 0 12px 12px;
+  width: 100%;
+}
+
+.netname {
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 15px;
+  /* identical to box height, or 107% */
+
+  color: #fafbfb;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  text-align: left;
+  margin: 4px 0px;
+}
+
+.netassets {
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 12px;
+  color: #fafbfb;
+  opacity: 0.54;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  text-align: left;
+}
+
+.netvalue {
+  font-family: DM Mono, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height, or 133% */
+
+  text-align: right;
+
+  color: #fafbfb;
+
+  /* Inside Auto Layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 4px 0px;
+}
+
+.netstats {
+  font-family: DM Mono, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+
+  text-align: right;
+  letter-spacing: -0.01em;
+
+  color: #ffffffa5;
+}
+
+.netcard {
+  display: grid;
+  grid-template-columns: 32px 130px auto;
+  padding: 0 10px;
+  height: 60px;
+  border-bottom: 1px solid #ffffff17;
+  grid-gap: 10px 10px;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+.netcard:hover {
+  border-bottom: 1px solid #e3b0b017;
+}
+
+.netcard:active {
+  opacity: 0.7;
+}
+
+.netmid,
+.netlast {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.networklogo {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+}
+
+.cards {
+  height: 519px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  min-height: 510px;
+}
+
+.noop {
+  display: none;
+}
+
+.subtitle {
+  margin-top: 180px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  text-transform: capitalize;
+  color: #ffffff;
+  opacity: 0.46;
+}
+
+.noAccountsActions {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.communeButtonCont {
+  width: 295px;
+  height: 56px;
+  background: linear-gradient(0deg, #1f75c4 10.81%, #64a3de 139.52%);
+  border-radius: 8px;
+  padding: 3px;
+  cursor: pointer;
+  margin-top: 280px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+
+  text-align: center;
+  color: #fafbfb;
+}
+.communeButtonCont:active {
+  opacity: 0.7;
+  user-select: none;
+}
+
+.link {
+  align-items: center;
+  color: #fff;
+  display: flex;
+  opacity: 0.85;
+  text-decoration: none;
+  vertical-align: middle;
+  -webkit-box-align: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  display: flex;
+  opacity: 0.85;
+  text-decoration: none;
+  vertical-align: middle;
+}
+.link:hover {
+  color: #fff;
+  opacity: 1;
+}
+
+.link:visited {
+  color: #fff;
+}
+
+.link.isDisabled {
+  opacity: 0.4;
+}
+
+.communeButton {
+  width: 295px;
+  height: 50px;
+  background: linear-gradient(101.54deg, #2496ff 10.81%, #1b63a6 139.52%);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerCont {
+  display: flex;
+  margin-top: 18px;
+}
+
+.orSep {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 160%;
+  color: #56708f;
+
+  opacity: 0.8;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 6px;
+}
+
+.netstatspositive {
+  padding-left: 8px;
+  color: #55d171;
+}
+.netstatsnegative {
+  padding-left: 8px;
+  color: #d15555;
+}
+
+.totalSpinner {
+  position: relative;
+  top: -5px;
+  right: -8px;
+}

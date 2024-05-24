@@ -1,0 +1,49 @@
+{
+  "manifest_version": 2,
+  "name": "Commune Wallet",
+  "version": "1.0.0",
+  "icons": {
+    "16": "assets/images/icon-16.png",
+    "32": "assets/images/icon-32.png",
+    "48": "assets/images/icon-48.png",
+    "64": "assets/images/icon-64.png",
+    "128": "assets/images/icon-128.png"
+  },
+  "description": "The Wallet for Commune.",
+  "homepage_url": "https://github.com/commune-wallet/commune-wallet",
+  "short_name": "Commune Wallet",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "http://*/*",
+    "https://*/*",
+    "chrome://favicon/"
+  ],
+  "content_security_policy": "script-src 'self' blob: 'unsafe-eval' 'wasm-eval'; object-src 'self'; script-src-elem 'self' data:;",
+  "author": "commune",
+  "minimum_chrome_version": "49",
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "assets/images/icon-16.png",
+      "32": "assets/images/icon-32.png",
+      "48": "assets/images/icon-48.png",
+      "64": "assets/images/icon-64.png",
+      "128": "assets/images/icon-128.png"
+    },
+    "default_title": "Commune Wallet",
+    "chrome_style": false
+  },
+  "background": {
+    "scripts": ["js/background.bundle.js"],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["js/contentScript.bundle.js"],
+      "run_at": "document_start",
+      "all_frames": false
+    }
+  ]
+}
