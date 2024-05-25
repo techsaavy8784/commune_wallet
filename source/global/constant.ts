@@ -13,7 +13,7 @@ import ICON_AVAX from '~assets/images/icon_avalanche.svg';
 import ICON_DOGE from '~assets/images/icon_doge.png';
 import ICON_MATIC from '~assets/images/icon_matic.png';
 
-export const STATE_PORT = 'EARTH_WALLET';
+export const STATE_PORT = 'COMMUNE_WALLET';
 
 export const TEST_NETWORKS = [
   NETWORK_TITLE[NetworkSymbol.BitcoinTestnet],
@@ -156,10 +156,10 @@ export const DEFAULT_SYMBOLS = [
     order: 13,
   },
   {
-    name: "Polygon",
+    name: 'Polygon',
     icon: ICON_MATIC,
-    symbol: "MATIC",
-    coinGeckoId: "matic-network",
+    symbol: 'MATIC',
+    coinGeckoId: 'matic-network',
     isLive: true,
     isActive: true,
     preGenerate: true,

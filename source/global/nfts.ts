@@ -197,15 +197,6 @@ export const ICP_NFT_LIST = [
     icon: 'https://bid2t-gyaaa-aaaah-qcdea-cai.raw.ic0.app/?cc=0&type=thumbnail&tokenid=kzu34-iqkor-uwiaa-aaaaa-b4aqz-aaqca-aadgp-q',
   },
   {
-    name: 'Poked bots',
-    id: 'bzsui-sqaaa-aaaah-qce2a-cai',
-    isLive: true,
-    type: 'EXT',
-    order: 2,
-    description: `500 years from now humans have long left earth and only the Robots remain. Robots have managed to create new identities often based on relics they have found from earths past.`,
-    icon: 'https://bzsui-sqaaa-aaaah-qce2a-cai.raw.ic0.app/?cc=0&type=thumbnail&tokenid=rdlwm-kakor-uwiaa-aaaaa-b4arg-qaqca-aae4h-q',
-  },
-  {
     name: 'Saga Legends #1: The Fool',
     id: 'nges7-giaaa-aaaaj-qaiya-cai',
     type: 'EXT',

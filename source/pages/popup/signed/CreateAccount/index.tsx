@@ -94,7 +94,7 @@ const Page = () => {
                 autoCapitalize="off"
                 autoCorrect="off"
                 autoFocus={true}
-                className={clsx(styles.earthName, styles.communeinput)}
+                className={clsx(styles.communeName, styles.communeinput)}
                 onChange={(e) => setName(e.target.value)}
                 placeholder={i18nT('common.requiredPlaceholder')}
                 required

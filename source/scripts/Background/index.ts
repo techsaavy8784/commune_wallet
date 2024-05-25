@@ -9,7 +9,7 @@ import { messagesHandler } from './controllers/MessageHandler';
 import type { IMainController } from './types/IMainController';
 
 browser.runtime.onInstalled.addListener((): void => {
-  console.emoji('🌎', 'earth extension installed');
+  console.log('status:', 'commune wallet extension installed');
 });
 
 declare global {
@@ -23,9 +23,9 @@ if (!window.controller) {
 }
 
 browser.runtime.onConnect.addListener((port: Runtime.Port) => {
-  console.emoji('🌎', 'earth extension onConnect');
+  console.log('status', 'commune wallet extension onConnect');
 
-  if (port.name === 'earth') {
+  if (port.name === 'commune') {
     messagesHandler(port, window.controller);
   }
 });
